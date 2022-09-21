@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233deg, 47%, 7%);
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Inter", sans-serif;
+}
+
+.flex-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+.flex-container .main-container {
+  width: 85%;
+  height: auto;
+  background-color: hsl(244deg, 38%, 16%);
+  border-radius: 12px;
+  text-align: center;
+}
+.flex-container .bg-img {
+  width: 100%;
+  height: 12em;
+  background-image: linear-gradient(90deg, hsla(277deg, 64%, 61%, 0.5), hsla(277deg, 64%, 61%, 0.5)), url(./images/image-header-mobile.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px 12px 0 0;
+}
+.flex-container .post-info {
+  padding: 40px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.flex-container .post-info .main-title {
+  font-size: 1.8em;
+}
+.flex-container .post-info .main-title .purple {
+  color: hsl(277deg, 64%, 61%);
+}
+.flex-container .post-info .main-text {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 15px;
+  line-height: 25px;
+  padding: 0 5px;
+}
+.flex-container .post-info .additional-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-top: 10px;
+}
+.flex-container .post-info .additional-info .infos .number {
+  font-size: 1.4em;
+}
+.flex-container .post-info .additional-info .infos .stuff {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0deg, 0%, 100%, 0.6);
+  margin-bottom: 7px;
+}
+
+.attribution {
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9em;
+  padding: 0 10px 5px 10px;
+}
+.attribution a {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 1em;
+  text-decoration: none;
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 658px) {
+  .flex-container {
+    height: 90vh;
+  }
+  .flex-container .main-container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 65%;
+    height: auto;
+    text-align: left;
+  }
+  .flex-container .bg-img {
+    height: 100%;
+    width: 80em;
+    background-image: linear-gradient(90deg, hsla(277deg, 64%, 61%, 0.5), hsla(277deg, 64%, 61%, 0.5)), url(./images/image-header-desktop.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 12px 12px 0;
+  }
+  .flex-container .post-info {
+    padding: 50px 70px 50px 60px;
+  }
+  .flex-container .post-info .additional-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
